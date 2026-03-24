@@ -1,16 +1,7 @@
 import { useState } from "react";
+import type { Food } from "../types";
 
-type Food = {
-  id: number;
-  name: string;
-  image: string;
-  description: string;
-  scene: string;
-  ingredients: string[];
-  temperature: "hot" | "cold" | "room temperature";
-};
-
-export default function FoodCard({ food }: { food: Food }) {
+export default function FoodCard({ food }: Readonly<{ food: Food }>) {
   const [flipped, setFlipped] = useState(false);
 
   return (

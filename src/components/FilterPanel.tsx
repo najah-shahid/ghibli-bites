@@ -27,7 +27,7 @@ export default function FilterPanel({
   setSelectedMovie,
   selectedType,
   setSelectedType,
-}: Props) {
+}: Readonly<Props>) {
   return (
     <div className="filter-panel">
       <select value={selectedMovie} onChange={(e) => setSelectedMovie(e.target.value)}>
