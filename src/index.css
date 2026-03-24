@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500&display=swap');
+
+:root {
+  font-family: 'Mali', cursive;
+}
+
+/* LIGHT THEME */
+.home.day, .menu-page.day, .navbar.day {
+  --bg-top: #CCDBE4;
+  --bg-bottom: #90C3DF;
+
+  --card: #D3E0C6;
+  --text-main: #727061;
+  --text-accent: #B05E76;
+}
+
+/* DARK THEME */
+.home.night, .menu-page.night, .navbar.night {
+  --bg-top: #557288;
+  --bg-bottom: #111F2D;
+
+  --card: #818F6F;
+  --text-main: #E6EAF3;
+  --text-accent: #9F566B;
+}
+
+/* RESET (fix black sides issue) */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: none;
+}
+
+/* Force background to always match theme */
+body {
+  background: var(--bg-bottom);
+  /* overflow-y: scroll; */
+}
+
+.home.day, .menu-page.day {
+  background: linear-gradient(to bottom, #8fbcd4, #cfd8dc, #F6F5EB);
+}
+
+.home.night, .menu-page.night {
+  background: linear-gradient(to bottom, var(--bg-bottom), var(--bg-top), var(--text-main));
+}

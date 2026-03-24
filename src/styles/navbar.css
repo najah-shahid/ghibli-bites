@@ -1,0 +1,148 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  padding: 10px 30px 0px;
+}
+
+
+/* LEFT */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+
+}
+
+.totoro {
+  width: 80px; /* BIGGER */
+}
+
+.nav-left h1 {
+  font-size: 22px; /* SMALLER */
+  color: var(--text-main);
+  font-weight: 400;
+}
+
+.nav-right p {
+  font-size: 18px; /* SMALLER */
+  color: var(--text-main);
+  font-weight: 300;
+  cursor: pointer;
+}
+.nav-right p:hover {
+  color: var(--text-accent);
+  transform: scale(1.1);
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* LINKS (shifted right) */
+.nav-links {
+  display: flex;
+  gap: 40px;
+  margin-right: 20px;
+}
+
+/* MUSIC BUTTON */
+.music-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-main);
+  /* move it down a little */
+  margin-top: 5px;
+}
+
+.music-btn:hover {
+  color: var(--text-accent);
+  transform: scale(1.1);
+}
+
+/* TOGGLE */
+.switch {
+  position: relative;
+  width: 45px;
+  height: 22px;
+  margin-left: 10px; /* FIX spacing */
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background: var(--bg-bottom);
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 10px 0px;
+    }
+    .nav-left {
+        gap: 8px;
+    }
+    .totoro {
+        width: 50px;
+    }
+    .nav-left h1 {
+        font-size: 14px;
+    }
+    .nav-right {
+        gap: 4px;
+    }
+    .nav-right p {
+        font-size: 12px;
+    }
+    .nav-links {
+        gap: 16px;
+    }
+    
+    .music-btn {
+        font-size: 16px;
+    }
+    .switch {
+        width: 35px;
+        height: 22px;
+    }
+    .slider::before {
+        width: 16px;
+        height: 16px;
+        top: 3px;
+        left: 2px;
+    }
+    input:checked + .slider::before {
+        transform: translateX(15px);
+    }
+}
