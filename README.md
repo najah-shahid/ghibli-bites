@@ -2,9 +2,7 @@
 
 A Studio Ghibli–inspired website built with **React + Vite + TypeScript**, where users can explore iconic foods from Ghibli movies in a playful, animated interface.
 
-> ✨ Focused on delivering strong UI/UX, animations, and clean component design.
-
----
+- Live Demo: [ghibli-bites.vercel.app](https://ghibli-bites.vercel.app/)
 
 ## 🚀 Tech Stack
 
@@ -12,7 +10,6 @@ A Studio Ghibli–inspired website built with **React + Vite + TypeScript**, whe
 * 🎨 **CSS**
 * 📦 **Static JSON for data**
 
----
 
 ## 🌐 Pages & Features
 
@@ -30,7 +27,6 @@ A Studio Ghibli–inspired website built with **React + Vite + TypeScript**, whe
   * 🌞 Day mode
   * 🌙 Night mode
 
----
 
 ### 🍜 Menu Page (Main Attraction)
 
@@ -60,7 +56,6 @@ A Studio Ghibli–inspired website built with **React + Vite + TypeScript**, whe
 * Hover animations (steam effects)
 * Flip cards to reveal descriptions
 
----
 
 ## 🎨 Theme & Design
 
@@ -84,7 +79,6 @@ A Studio Ghibli–inspired website built with **React + Vite + TypeScript**, whe
 #9F566B
 ```
 
----
 
 ## 📁 Project Structure
 
@@ -100,7 +94,6 @@ src/
 └── App.tsx
 ```
 
----
 
 ## ⚙️ Installation & Setup
 
@@ -118,7 +111,6 @@ npm install
 npm run dev
 ```
 
----
 
 ## 🎯 What This Project Demonstrates
 
@@ -129,13 +121,11 @@ npm run dev
 * Theme switching (light/dark mode)
 * Structured and scalable frontend code
 
----
 
 ## 🧑‍💻 Author
 
 **Najah Shahid**
 
----
 
 ## 📜 Disclaimer
 
