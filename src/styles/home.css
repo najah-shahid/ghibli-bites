@@ -104,8 +104,9 @@
 .sprite {
   position: absolute;
   width: 30px;
-  animation: floatUp 12s linear infinite;
+  animation: floatUp 9s linear infinite;
   will-change: transform; /* 🔥 performance boost */
+  opacity: 0;
 }
 
 /* FLOAT ANIMATION */
